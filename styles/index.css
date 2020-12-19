@@ -1,0 +1,68 @@
+body {
+  text-align: center;
+}
+
+#opts {
+  margin: 0.5rem;
+}
+
+#game {
+  margin: 2rem;
+}
+
+#reset {
+  background-color: #EAA400;
+  padding: 0.8rem 2.75rem;
+  font-size: medium;
+  margin-bottom: 2rem;
+}
+
+#start {
+  background-color: #80B584;
+  padding: 0.8rem 2.75rem;
+  font-size: medium;
+  margin-bottom: 2rem;
+}
+
+#stop {
+  background-color: #F70000;
+  padding: 0.8rem 2.75rem;
+  font-size: medium;
+  margin-bottom: 2rem;
+  color: #f2f2f2;
+}
+
+#iteration {
+  background-color: #3de4f3;
+  padding: 0.8rem 2.75rem;
+  font-size: medium;
+  margin: 0rem 2rem;
+}
+
+#load {
+  background-color: rgb(129, 68, 44);
+  padding: 0.8rem 2.75rem;
+  font-size: medium;
+  margin-bottom: 1rem;
+  color: #f2f2f2;
+}
+
+#save{
+  background-color: rgb(163, 162, 162);
+  padding: 0.8rem 2.75rem;
+  font-size: medium;
+  margin-bottom: 1rem;
+  color: #f2f2f2;
+}
+
+#save-id {
+  background-color: rgb(0, 0, 0);
+  padding: 0.8rem 2.75rem;
+  font-size: medium;
+  margin-bottom: 1rem;
+  color: #f2f2f2;
+}
+
+select {
+  width: 17.5rem;
+}
