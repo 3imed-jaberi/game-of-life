@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>The Game of Life</title>
+  <!-- css style -->
+  <link rel='stylesheet' href='styles/index.css'>
+</head>
+<body>
+  <div id='game'>
+    <!-- control panel -->
+    <div id='opts'>
+      <div>
+        <button data-event='play' id='start'>Play</button>
+        <button data-event='pause' id='stop'>Pause</button>
+        <button data-event='reset' id='reset'>Reset</button>
+        <span class='iteration' id='iteration'>0</span>
+      </div>
+      <div>
+        <button data-event='save' id='save'>Save</button>
+        <select id='save-id'>
+          <option value=''>Select a board:</option>
+        </select>
+        <button data-event='load' id='load'>Load</button>
+      </div>
+    </div>
+    <!-- 2D game board -->
+    <canvas class='grid' width='601' height='601' ></canvas>
+  </div>
+
+  <!-- load some deps. -->
+  <!-- jquery -->
+  <script src='https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js'></script>
+  <!-- eventemmiter2 (same as Node.js events module) -->
+  <script src='https://cdn.jsdelivr.net/npm/eventemitter2@6.4.3/lib/eventemitter2.min.js'></script>
+  <!-- state-machine -->
+  <script src='https://cdn.jsdelivr.net/npm/javascript-state-machine@2.4.0/state-machine.min.js'></script>
+  <!-- 
+    i use also auto-bind but with my few changes.
+    you can find this module inside the utils dir
+  -->
+
+  <!-- root sourc code -->
+  <script type='module' src='scripts/index.js'></script>
+</body>
+</html>
